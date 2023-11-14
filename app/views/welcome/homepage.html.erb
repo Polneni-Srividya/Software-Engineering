@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Shop Homepage - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="stylesheets/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+            <%= link_to 'Indian Cuisine', root_path, class:"navbar-brand" %>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="../">Home</a></li>
+                        <%# <%= link_to 'Home', root_path, class:"navbar-link active" %> 
+                        <li class="nav-item"><a class="nav-link" href="welcome/about">About</a></li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Region</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="welcome/south">South</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#!">North</a></li>
+                                <li><a class="dropdown-item" href="#!">East</a></li>
+                                <li><a class="dropdown-item" href="#!">West</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">States</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="welcome/hyderabad">Hyderabad</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                 <li><a class="dropdown-item" href="#!">Andhrapradesh</a></li>
+                                <li><a class="dropdown-item" href="#!">Karnataka</a></li>
+                                <li><a class="dropdown-item" href="#!">Kerala</a></li>
+                                <li><a class="dropdown-item" href="#!">Tamil Nadu</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Meals</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="welcome/breakfast">Breakfast</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="welcome/lunch">Lunch</a></li>
+                                <li><a class="dropdown-item" href="welcome/snacks">Snacks</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Who are we?</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Hello Indian Students of UOFM !
+                    Are you new to the city and missing your own food? Don't worry 
+                    we are here for you. We provide you the best food of your own 
+                    state and make you feel you are close to home :)
+                    Our students who are the experts of food making, will display you
+                    the available food each day and all you have to do is order your 
+                    favourite food and enjoy it. People who are foodies and would 
+                    like to explore new foods can also order our food. 
+                    Excited to know more! 
+                    Come and Explore with us :)
+                    </p>
+                </div>
+                
+                
+            </div>
+            <div class="container px-4 px-lg-5 my-5">
+            <div class="container px-4 px-lg-5 text-center">
+            <a class="btn btn-primary btn-xl" href="welcome/home">Explore Our Food</a>
+            </div>
+            </div>
+            <div class="row gx-4 gx-lg-5 align-items-center my-5 mx-5 text-white">
+                <div class="col-lg-3 px-5 mx-5"><%= image_tag("unnamed.jpg", :alt => "location", :style => "width:256px;height:256px;" ) %></div>
+                <div class="col-lg-5">
+                    <h1 class="font-weight-light">Location</h1>
+                    <p>Indian Cuisine<br>
+                    University of Memphis<br>
+                    3720 Alumni Ave
+                    Memphis, TN 38152<br>
+                    Phno: (901) 678-2000<br>
+                    Working hours : 9 am to 5 pm , 
+                    Monday to Friday</p>
+                </div>
+            </div>
+            
+        </header>
+        
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; IndianCuisine 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
